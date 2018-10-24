@@ -77,7 +77,8 @@ function isGood(student) {
 
 /**
  * 🦄:
- * 1. Refactor "isBoy" and "isGirl".
+ * 1. Refactor "isBoy" and "isGirl" functions
+ * similar to the "hasGradeGraterThan" function from exercise 3.
  * 2. [optional] Find a problem in the "isOlderThanTwenty" function 🤓.
  */
 

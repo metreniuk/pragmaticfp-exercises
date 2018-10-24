@@ -96,13 +96,10 @@ function isGirl(student) {
 /**
  * 🦄: "processStudents" should perform following tasks:
  * 1. Should return the students that have the grade greater than 6.
- * 📖 You can use the "isGood" function
  * 2. Should return the students that are older than 20.
- * 📖 You can use the "isOlderThanTwenty" function
  * 3. Should count the boys.
- * 📖 You can use the "isBoy" function
  * 4. Should count the girls.
- * 📖 You can use the "isGirl" function
+ * 📖 You can use helper functions from the top 👆
  */
 
 function processStudents(students) {
