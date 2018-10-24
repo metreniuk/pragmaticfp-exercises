@@ -76,17 +76,6 @@ function isGood(student) {
   return student.grade > 6;
 }
 
-const isOlderThanTwentyFrom = function(now) {
-  return function(student) {
-    const dateOfBirth = student.dateOfBirth;
-    const year = dateOfBirth.year;
-    const month = dateOfBirth.month;
-    const yearDiff = now.getFullYear() - year;
-    const monthDiff = now.getMonth() - month;
-    return yearDiff === 0 ? monthDiff >= 0 : yearDiff > 20;
-  };
-};
-
 const isOfGender = function(gender) {
   return function(student) {
     return student.gender === gender;
@@ -95,6 +84,17 @@ const isOfGender = function(gender) {
 
 const isBoy = isOfGender("M");
 const isGirl = isOfGender("F");
+
+const isOlderThanTwentyFrom = function(dateToCompare) {
+  return function(student) {
+    const dateOfBirth = student.dateOfBirth;
+    const year = dateOfBirth.year;
+    const month = dateOfBirth.month;
+    const yearDiff = dateToCompare.getFullYear() - year;
+    const monthDiff = dateToCompare.getMonth() - month;
+    return yearDiff === 0 ? monthDiff >= 0 : yearDiff > 20;
+  };
+};
 
 function processStudents(students) {
   const isOlderThanTwentyFromNow = isOlderThanTwentyFrom(new Date());

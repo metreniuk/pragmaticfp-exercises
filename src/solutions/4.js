@@ -116,6 +116,7 @@ function processStudents(students) {
       if (isBoy(student)) {
         boysCount++;
       }
+
       if (isGirl(student)) {
         girlsCount++;
       }

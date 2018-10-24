@@ -75,6 +75,7 @@ function isGood(student) {
   return student.grade > 6;
 }
 
+// This function ignores the day, it works only with months and years 🤷‍♂️.
 function isOlderThanTwenty(student) {
   const dateOfBirth = student.dateOfBirth;
   const year = dateOfBirth.year;
@@ -97,8 +98,8 @@ function isGirl(student) {
  * 🦄: "processStudents" should perform following tasks:
  * 1. Should return the students that have the grade greater than 6.
  * 2. Should return the students that are older than 20.
- * 3. Should count the boys.
- * 4. Should count the girls.
+ * 3. Should count the boys that meet the first two criteria.
+ * 4. Should count the girls that meet the first two criteria.
  * 📖 You can use helper functions from the top 👆
  */
 

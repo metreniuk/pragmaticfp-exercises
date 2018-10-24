@@ -77,17 +77,10 @@ function isGood(student) {
 
 /**
  * 🦄:
- * 1. Refactor "isBoy" and "isGirl" functions
+ * 1. Refactor "isBoy" and "isGirl" functions using a higher-order function
  * similar to the "hasGradeGraterThan" function from exercise 3.
  * 2. [optional] Find a problem in the "isOlderThanTwenty" function 🤓.
  */
-
-function isOfGender(gender) {
-  return function(student) {
-    return student.gender === gender;
-  };
-}
-
 function isBoy(student) {
   return student.gender === "M";
 }
