@@ -1,3 +1,6 @@
+## Description:
+This repo has exercises from the workshop on introduction into functional programming.
+
 ## Exercises:
 https://codesandbox.io/s/j2pplomj85?eslint=1&module=%2Fsrc%2Fexercises%2F1.js
 
